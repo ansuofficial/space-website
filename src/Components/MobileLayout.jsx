@@ -13,10 +13,10 @@ function MobileLayout() {
         className="w-full flex justify-end cursor-pointer"
       >
         {menu ? (
-          <img className="w-10 " src={MenuIcon} alt="" />
+          <img className="w-7 " src={MenuIcon} alt="" />
         ) : (
           <img
-            className="w-10 hover:rotate-180 transition-transform"
+            className="w-7 hover:rotate-180 transition-transform"
             src={Close}
             alt=""
           />

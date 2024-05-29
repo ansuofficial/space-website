@@ -3,7 +3,7 @@ import Data from "../data.json";
 function Destination() {
   return (
     <>
-      <div className="bg-destinationMobile lg:bg-destinationDesktop  h-screen w-full bg-cover bg-center bg-no-repeat">
+      <div className="bg-destinationMobile lg:bg-destinationDesktop h-[120vh]  lg:h-screen w-full bg-cover bg-center bg-no-repeat">
         <div className="max-w-[1060px] mx-auto text-white flex items-center">
           <div className="mt-[110px] w-full">
             <h1 className="lg:text-[28px] bellowlg:text-[21px] font-default tracking-wider uppercase bellowlg:px-2">

@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="bg-homeMobile lg:bg-homeDesktop h-screen w-full bg-cover bg-center bg-no-repeat">
+    <div className="bg-homeMobile lg:bg-homeDesktop h-[110vh] lg:h-screen w-full bg-cover bg-center bg-no-repeat">
       <div className="max-w-[1060px] mx-auto text-white flex items-center w-[90%]">
         <div className="lg:flex lg:items-center mt-[260px] space-y-24">
           <div className="bellowlg:text-center ">

@@ -6,7 +6,7 @@ import MobileLayout from "./MobileLayout";
 
 function Layout() {
   return (
-    <div className="h-dvh overflow-hidden ">
+    <div className="h-dvh">
       <div className="absolute w-full py-8">
         <div className="flex justify-between md:items-center">
           <div className="md:flex md:items-center md:space-x-24 md:w-2/3 ml-14">

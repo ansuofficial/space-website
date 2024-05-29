@@ -43,7 +43,7 @@ function CrewMobile() {
                 </div>
                 <div className="w-full flex justify-center">
                   <img
-                    className=""
+                    className="w-[250px]"
                     src={currentCrew.images.png}
                     alt={currentCrew.name}
                   />
