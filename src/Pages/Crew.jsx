@@ -20,10 +20,10 @@ function Crew() {
 
   return (
     <div
-      className="lg:bg-crewDesktop bg-crewMobile h-[115vh] lg:h-screen w-full bg-cover bg-center bg-no-repeat"
+      className="lg:bg-crewDesktop bg-crewMobile h-[115vh] lg:h-screen lg:overflow-hidden w-full bg-cover bg-center bg-no-repeat"
     >
       <div className="max-w-[1060px] mx-auto text-white flex items-center bellowlg:hidden">
-        <div className="mt-[110px] w-full ring">
+        <div className="mt-[110px] w-full">
           <h1 className="font-default tracking-wider uppercase text-[28px]">
             <span className="text-slate-700">02</span> Meet your crew
           </h1>
