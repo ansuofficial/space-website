@@ -1,6 +1,6 @@
 import React from "react";
-import backgroundimage from "/technology/background-technology-desktop.jpg";
 import Data from "../data.json";
+import TechnologyMobile from "../Components/TechnologyMobile";
 
 function Technology() {
   const [technology, settechnology] = React.useState(0);
@@ -11,18 +11,15 @@ function Technology() {
   };
 
   React.useEffect(() => {
-    const interval = setInterval(next, 5000);
+    const interval = setInterval(next, 7000);
     return () => clearInterval(interval);
   });
 
   const current = Data.technology[technology];
 
   return (
-    <div
-      style={{ backgroundImage: `url(${backgroundimage})` }}
-      className="h-screen w-full bg-cover bg-center bg-no-repeat"
-    >
-      <div className="max-w-[1060px] mx-auto text-white flex items-center">
+    <div className="lg:bg-technologyDesktop bg-technologyMobile h-screen w-full bg-cover bg-center bg-no-repeat">
+      <div className="max-w-[1060px] mx-auto w-[90%] text-white flex items-center bellowlg:hidden">
         <div className="mt-[110px] w-full">
           <h1 className="text-[28px] font-default tracking-wider uppercase">
             <span className="text-slate-700">02</span> Meet your crew
@@ -34,7 +31,11 @@ function Technology() {
                 {Data.technology.map((_, index) => (
                   <div
                     onClick={() => settechnology(index)}
-                    className={`w-12 h-12 rounded-full ring-1 ring-white flex items-center justify-center cursor-pointer ${technology === index ? "bg-white text-black font-bold font-custom" : "font-default"}`}
+                    className={`w-12 h-12 rounded-full ring-1 ring-white flex items-center justify-center cursor-pointer ${
+                      technology === index
+                        ? "bg-white text-black font-bold font-custom"
+                        : "font-default"
+                    }`}
                   >
                     <span>{index}</span>
                   </div>
@@ -63,6 +64,9 @@ function Technology() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="lg:hidden">
+        <TechnologyMobile />
       </div>
     </div>
   );

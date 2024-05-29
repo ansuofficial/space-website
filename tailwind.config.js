@@ -14,6 +14,7 @@ export default {
       backgroundImage: {
         homeDesktop: "url('/home/background-home-desktop.jpg')",
         homeMobile: "url('/home/background-home-mobile.jpg')",
+
         destinationDesktop:
           "url('/destination/background-destination-desktop.jpg')",
         destinationMobile:
@@ -21,6 +22,9 @@ export default {
 
         crewDesktop: "url('/crew/background-crew-desktop.jpg')",
         crewMobile: "url('/crew/background-crew-mobile.jpg')",
+        technologyDesktop:
+          "url('/technology/background-technology-desktop.jpg')",
+        technologyMobile: "url('/technology/background-technology-mobile.jpg')",
       },
     },
   },

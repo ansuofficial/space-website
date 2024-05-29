@@ -12,7 +12,7 @@ function Crew() {
   };
 
   useEffect(() => {
-    const slideInterval = setInterval(next, 5000);
+    const slideInterval = setInterval(next, 7000);
     return () => clearInterval(slideInterval);
   }, []);
 

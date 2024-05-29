@@ -12,17 +12,14 @@ function CrewMobile() {
   };
 
   useEffect(() => {
-    const slideInterval = setInterval(next, 5000);
+    const slideInterval = setInterval(next, 7000);
     return () => clearInterval(slideInterval);
   }, []);
 
   const currentCrew = Data.crew[slide];
 
   return (
-    <div
-      style={{ backgroundImage: `url(${backgroundimage})` }}
-      className="h-screen w-full bg-cover bg-center bg-no-repeat"
-    >
+    <div>
       <div className="max-w-[1060px] mx-auto text-white flex items-center">
         <div className="mt-[110px] w-full">
           <h1 className="text-[28px] bellowlg:text-[21px] font-default tracking-wider uppercase bellowlg:px-2 ">
@@ -75,7 +72,6 @@ function CrewMobile() {
 }
 
 export default CrewMobile;
-
 
 // NOTES USELOADERDATA()
 // REACT DAN AND RAYAN
