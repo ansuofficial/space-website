@@ -7,15 +7,18 @@ function MobileLayout() {
   const [menu, setshowmenu] = React.useState(true);
 
   return (
-    <div className="text-white mr-4">
-      <div
-        onClick={() => setshowmenu((menu) => !menu)}
-        className="w-full flex justify-end cursor-pointer"
-      >
+    <div className="text-white mr-4 ring">
+      <div className="w-full flex justify-end cursor-pointer">
         {menu ? (
-          <img className="w-7 " src={MenuIcon} alt="" />
+          <img
+            onClick={() => setshowmenu(false)}
+            className="w-7"
+            src={MenuIcon}
+            alt=""
+          />
         ) : (
           <img
+            onClick={() => setshowmenu(true)}
             className="w-7 hover:rotate-180 transition-transform"
             src={Close}
             alt=""
@@ -29,6 +32,7 @@ function MobileLayout() {
       >
         <NavLink
           to="/"
+          onClick={() => setshowmenu(true)}
           className={({ isActive }) =>
             `cursor-pointer hover:border-b-2 py-6 ${
               isActive ? "border-b-2" : ""
@@ -39,6 +43,7 @@ function MobileLayout() {
         </NavLink>
         <NavLink
           to={"/destination/moon"}
+          onClick={() => setshowmenu(true)}
           className={({ isActive }) =>
             `cursor-pointer hover:border-b-2 py-6 ${
               isActive ? "border-b-2" : ""
@@ -49,6 +54,7 @@ function MobileLayout() {
         </NavLink>
         <NavLink
           to={"/crew"}
+          onClick={() => setshowmenu(true)}
           className={({ isActive }) =>
             `cursor-pointer hover:border-b-2 py-6 ${
               isActive ? "border-b-2" : ""
@@ -59,7 +65,7 @@ function MobileLayout() {
         </NavLink>
         <NavLink
           to={"/technology"}
-          c
+          onClick={() => setshowmenu(true)}
           className={({ isActive }) =>
             `cursor-pointer hover:border-b-2 py-6 ${
               isActive ? "border-b-2" : ""
