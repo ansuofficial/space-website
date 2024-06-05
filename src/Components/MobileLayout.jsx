@@ -7,7 +7,7 @@ function MobileLayout() {
   const [menu, setshowmenu] = React.useState(true);
 
   return (
-    <div className="text-white mr-4 ring">
+    <div className="text-white mr-4">
       <div className="w-full flex justify-end cursor-pointer">
         {menu ? (
           <img
